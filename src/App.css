@@ -91,10 +91,3 @@ input[type="submit"]:hover {
   color: #58d68d;
   background: white;
 }
-
-/* Feedback */
-
-h1 {
-  font-size: 12px;
-  color: red;
-}

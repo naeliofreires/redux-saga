@@ -52,9 +52,15 @@ class App extends React.Component {
       return <h1>Carregando...</h1>;
     }
 
+    if (!fetching && !error && !user) {
+      return (
+        <h1 style={{ color: "blue" }}>Digite um username para buscar :)</h1>
+      );
+    }
+
     if (error || !user) {
       return (
-        <h1>
+        <h1 style={{ color: "red" }}>
           Desculpe, algo aconteceu!
           <br />
           Que tal, tentar outro username?
